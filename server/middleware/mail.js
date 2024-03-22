@@ -1,6 +1,7 @@
 const { google } = require('googleapis');
 const { OAuth2Client } = require('google-auth-library/build/src/auth/oauth2client');
 const {decrypt, exchangeRefreshTokenForAccessToken } = require('../controllers/APIKEY/APIKEY')
+require('dotenv').config();
 
 
 const createMessage = (sender, to, subject, body) => {
@@ -21,8 +22,8 @@ const createMessage = (sender, to, subject, body) => {
       const refreshToken = decrypt(apikey.googRefreshToken);
   
       const oauth2Client = new OAuth2Client({
-        clientId: '214375319427-lj3f9c6j254llnofuh72s56fe85rm106.apps.googleusercontent.com',
-        clientSecret: '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',
+        client_id: process.env.GOOGLE_CLIENT_ID,
+        client_secret: process.env.GOOGLE_CLIENT_SECRET,
         redirectUri: 'https://grpleads.com',
       });
   
