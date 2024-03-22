@@ -56,7 +56,7 @@ const AddBulkEmailHistory = (props) => {
               recipient: recipient,
               createBy: createBy,
               // Replace {firstlastname} with the concatenated first and last name
-              message: formattedMessage.replace(/{firstlastname}/g, `${firstName} ${lastName}`),
+              message: formattedMessage.replace(/{firstlastname}/g, `${firstName || ''} ${lastName || ''}`),
             };
       
             emails.push(email);
