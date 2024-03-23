@@ -20,9 +20,9 @@ This is a comprehensive Customer Relationship Management (CRM) application built
 - **React.js**: A JavaScript library for building user interfaces, used for the frontend of the CRM application.
 - **Node.js**: A JavaScript runtime used for building the server-side logic and API endpoints.
 - **OAuth2**: Standardized protocol used for secure authorization and authentication.
-- **Nodemailer**: Node.js module used for sending emails.
-- **Bootstrap**: Frontend framework used for responsive and mobile-first design.
-
+- **Gmail NPM package**: Module by google to send emails using oauth2.
+- **Chakra**: Frontend framework used for responsive and mobile-first design.
+- **react-spreadsheet-import**: Open source react csv importer [react-spreadsheet-import](https://github.com/UgnisSoftware/react-spreadsheet-import)
 ### Installation
 
 1. Clone the repository:
@@ -57,7 +57,7 @@ This is a comprehensive Customer Relationship Management (CRM) application built
     cd ../client && npm run heroku-postbuild && npm run start
     ```
 
-6. Access the application in your browser at `http://localhost:3000`.
+6. Access the application in your browser at `http://localhost:5001`.
 
 ### License
 
@@ -69,8 +69,5 @@ Contributions are welcome! Feel free to submit issues and pull requests.
 
 ### Authors
 
-- [Your Name](https://github.com/your_username)
+- [Your Name](https://github.com/ashmitg)
 
-### Acknowledgements
-
-- Special thanks to [OpenAI](https://openai.com) for providing the ChatGPT model used to generate this README.
