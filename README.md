@@ -69,5 +69,5 @@ Contributions are welcome! Feel free to submit issues and pull requests.
 
 ### Authors
 
-- [Your Name](https://github.com/ashmitg)
+- [Ashmit](https://github.com/ashmitg)
 
