@@ -9,6 +9,8 @@ import { Box, Flex, Spinner, useColorModeValue } from "@chakra-ui/react";
 import { SidebarContext } from "contexts/SidebarContext";
 // import Spinner from "components/spinner/Spinner";
 
+import HomePage from './homepage'
+
 // Custom Chakra theme
 export default function Auth({ setIsLogin }) {
 
@@ -70,6 +72,7 @@ export default function Auth({ setIsLogin }) {
               }>
                 <Routes>
                   {getRoutes(routes)}
+                  <Route path="/" element={<HomePage />} /> {/* Add this line */}
                   <Route path="/*" element={<Navigate to="/auth/sign-in" />} />
                 </Routes>
               </Suspense>
